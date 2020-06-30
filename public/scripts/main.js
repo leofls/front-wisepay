@@ -22,16 +22,17 @@ close.addEventListener("click", () => {
 
 btn.addEventListener('click', () => {
     menu.classList.toggle('hidden')
-    // menu.classList.toggle('menu-colapsed')
-
+    
     document.querySelector('body').classList.toggle('body-expanded')  
+    selecteditem.classList.remove('active')
+    selecteditem.classList.remove('sub-active')
 
 })
 
 // quando clicar em cadastro mostrar submenu
 selecteditem.addEventListener('click', () => {
     selecteditem.classList.toggle('selected')
-    // selecteditem.classList.remove('active')
+    selecteditem.classList.toggle('sub-active')
     menu.classList.toggle('hidden')
     document.querySelector('body').classList.toggle('body-expanded')  
 
@@ -49,6 +50,6 @@ linkMenu.forEach(function(currentValue, index, array) {
             elemento.classList.remove('active')
         })
         currentValue.classList.add('active')
-
+        
     })
 })

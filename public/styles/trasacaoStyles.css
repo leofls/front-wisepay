@@ -98,16 +98,26 @@ body{
 }
 
 /* inicio sub-menu */
-.sidebar ul li.item-menu.active ul{
-    /* background: #0470b1 ; */
+/* .sidebar ul li.item-menu.active ul{
+    /* background: #0470b1 ; 
     color: #000;
     width: 100%;
     height: 100;
     display: block;
-} 
+}  */
+
+.sidebar ul li.item-menu.active.sub-active ul{
+    color: #000;
+    width: 100%;
+    height: 100;
+    display: block;
+}
+
+/* ocuta submenu */
 .sidebar ul li.item-menu ul{
     display: none;
 } 
+
 .sidebar ul li.item-menu ul li a{
     color: #000;
 } 

@@ -278,38 +278,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="../../public/scripts/main.js"></script>
 
- <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- JSX -->
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  
-  <!-- Load our React component. -->
-  <script>
-	import React  from 'react';
-	import ReactDOM  from 'react-dom';
-	import { calendar } from 'react-date-range';
-
-	import '../../node_modules/react-date-range/dist/styles.css'; // main style file
-	import '../../node_modules/react-date-range/dist/theme/default.css'; // theme css file
-
-
-
-	function DatePick(){
-	const handleSelect = data => {
-		console.log(date)
-	};
-	return (
-		<div>
-		<Calendar date={new Date()} onchange = {handleSelect} />;
-		</div>
-	);
-	}
-
-	ReactDOM.render(<DatePick />, document.getElementById("data-piker") );
-  </script>
-  <!-- <script src="../../public/scripts/datapiker.js"></script> -->
 </body>
 </html>
