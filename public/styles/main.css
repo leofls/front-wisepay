@@ -1,0 +1,16 @@
+:root{
+    --title-color: #63799B;
+    --primary-color: #34cb79;
+    --link-color: #F47B0E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    background-origin: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}

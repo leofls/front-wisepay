@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transações - Wisepay</title>
+<!-- declaração CSS Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- estilos  -->
+<link rel="stylesheet" type= "text/css" href="../../public/styles/main.css">
+<link rel="stylesheet" href="../../public/styles/trasacaoStyles.css">
+<link rel="stylesheet" href="../../public/styles/modal.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+	<nav id= "" class="sidebar hidden">
+		<!-- "sidebar hidden" ou "sidebar " -->
+		<ul>
+			<li class="logo"> <img src="../../public/assets/Simbolo - Logo.svg" alt="logowisepay"> <img src="../../public/assets/Name-Logo.svg" class="logo-name" alt="logo-name"> <!-- <span class="title-logo"></span> --></li>
+			<li><span id="toggle-btn" class="toggle-btn "></span> </li>
+			<li class="item-menu cad ">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="38.661" height="38.661" class="icon " viewBox="0 0 38.661 38.661"><defs></defs><path class="a" d="M138.488,216.459,144.151,204h-9.2l-1.558,3.382L131.875,204H122.51l5.663,12.459H114v26.2h38.661v-26.2ZM136.4,206.265h4.236L136,216.459h-4.3Zm-5.99,0,1.723,3.849-2.191,4.755-3.911-8.6ZM150.4,240.4H116.265V218.725H150.4Zm0,0" transform="translate(-114 -204)"/><rect class="a" width="10.949" height="2.265" transform="translate(22.427 18.5)"/><rect class="a" width="10.949" height="2.265" transform="translate(22.427 24.579)"/><rect class="a" width="10.949" height="2.265" transform="translate(22.427 30.657)"/><path class="a" d="M170.306,394.831a3.964,3.964,0,1,0-4.889,0,5.984,5.984,0,0,0-4.917,6v1.344h14.725v-1.344a5.982,5.982,0,0,0-4.918-6Zm-2.446-4.816a1.7,1.7,0,1,1-1.7,1.7,1.7,1.7,0,0,1,1.7-1.7Zm-5.006,9.892c.588-2.856,3.919-3.1,5.008-3.1s4.419.24,5.008,3.1Zm0,0" transform="translate(-155.818 -369.25)"/></svg>
+					
+					<span class="title">CADASTROS</span>
+				</a>
+					<ul>
+						<li><a href="#">Usuários</a></li>
+						<li><a href="#">Perfis</a></li>
+						<li><a href="#">Fornecedores</a></li>                    
+						<li><a href="#">Planos de Contas</a></li>		                    
+					  </ul>
+				
+			</li>
+			<li class="item-menu ">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.078" height="40.839" class="icon selected" viewBox="0 0 51.078 40.839"><defs><style>.b{clip-path:url(#a);}</style><clipPath id="a"><path class="icont" d="M12.273,38.248a19.876,19.876,0,1,1,7.6,1.514A19.879,19.879,0,0,1,12.273,38.248ZM2.84,19.881A17.041,17.041,0,1,0,19.881,2.84,17.041,17.041,0,0,0,2.84,19.881Z"/></clipPath></defs><path class="a" d="M232.5,218.16v1.606h2.84V218.16a4.053,4.053,0,0,0,.6-7.492l-2.769-1.385a1.213,1.213,0,0,1,.542-2.3h.414a1.215,1.215,0,0,1,1.213,1.213v.207h2.84V208.2a4.062,4.062,0,0,0-2.84-3.867v-1.606H232.5v1.606a4.053,4.053,0,0,0-.6,7.492l2.769,1.385a1.212,1.212,0,0,1-.542,2.3h-.414a1.215,1.215,0,0,1-1.213-1.213v-.207h-2.84v.207a4.061,4.061,0,0,0,2.84,3.867Zm0,0" transform="translate(-208.402 -190.573)"/><g transform="translate(5.637 0.791)"><g class="b" transform="translate(0 0)"><g transform="translate(0 0)"><rect class="a" width="39.761" height="39.761"/></g></g></g><g transform="translate(32.617 19.252)"><rect class="a" width="2.84" height="2.84" transform="translate(0 0)"/></g><g transform="translate(15.577 19.252)"><rect class="a" width="2.84" height="2.84" transform="translate(0 0)"/></g><path class="a" d="M336.1,348.355l1.746,2.239a25.591,25.591,0,0,0,2.337-2.062l-2-2.012a23.039,23.039,0,0,1-2.079,1.834Zm0,0" transform="translate(-296.62 -309.755)"/><path class="a" d="M366.428,208.585l-2.716.834a22.771,22.771,0,0,1-3.662,20.472l2.256,1.725a25.613,25.613,0,0,0,4.123-23.031Zm0,0" transform="translate(-316.474 -195.43)"/><path class="a" d="M117.627,134.029l-1.673-2.3a25.472,25.472,0,0,0-10.48,19.171l2.835.165a22.639,22.639,0,0,1,9.318-17.04Zm0,0" transform="translate(-105.474 -131.734)"/></svg>
+					<span class="title">FINANCEIRO</span>
+				</a>
+			</li>
+			<li class="item-menu">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="33.661" height="45.902" class="icon " viewBox="0 0 33.661 45.902"><defs></defs><path class="a" d="M113.655,24.415a.765.765,0,0,0-.217-.541l-7.65-7.65a.755.755,0,0,0-.541-.217V16H82.3A2.3,2.3,0,0,0,80,18.3V59.607a2.3,2.3,0,0,0,2.3,2.3h29.071a2.3,2.3,0,0,0,2.3-2.3V24.415Zm-7.643-5.8,5.038,5.038h-4.273a.765.765,0,0,1-.765-.765Zm5.355,41.76H82.3a.765.765,0,0,1-.765-.765V18.3a.765.765,0,0,1,.765-.765h22.186v5.355a2.3,2.3,0,0,0,2.3,2.3h5.355V59.607A.765.765,0,0,1,111.366,60.372Z" transform="translate(-80 -16)"/><path class="a" d="M138.3,232a2.3,2.3,0,1,0,2.3,2.3A2.3,2.3,0,0,0,138.3,232Zm0,3.06a.765.765,0,1,1,.765-.765A.765.765,0,0,1,138.3,235.06Z" transform="translate(-130.645 -211.344)"/><rect class="a" width="15" transform="translate(14 23)"/><path class="a" d="M138.3,152a2.3,2.3,0,1,0,2.3,2.3A2.3,2.3,0,0,0,138.3,152Zm0,3.06a.765.765,0,1,1,.765-.765A.765.765,0,0,1,138.3,155.06Z" transform="translate(-130.645 -138.994)"/><rect class="a" width="15" height="2" transform="translate(14 14)"/><path class="a" d="M138.3,312a2.3,2.3,0,1,0,2.3,2.3A2.3,2.3,0,0,0,138.3,312Zm0,3.06a.765.765,0,1,1,.765-.765A.765.765,0,0,1,138.3,315.06Z" transform="translate(-130.645 -283.694)"/><rect class="a" width="15" height="1" transform="translate(14 30)"/><path class="a" d="M138.3,392a2.3,2.3,0,1,0,2.3,2.3A2.3,2.3,0,0,0,138.3,392Zm0,3.06a.765.765,0,1,1,.765-.765A.765.765,0,0,1,138.3,395.06Z" transform="translate(-130.645 -356.044)"/><rect class="a" width="15" transform="translate(14 38)"/></svg>
+					<span class="title">EXTRATO</span>
+				</a>
+			</li>			
+			<li class="item-menu">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="46.362" height="27.695" class="icon " viewBox="0 0 46.362 27.695"><defs></defs><circle class="a" cx="3.471" cy="3.471" r="3.471" transform="translate(0.156 19.709)"/><circle class="a" cx="3.471" cy="3.471" r="3.471" transform="translate(25.611 17.395)"/><path class="a" d="M43.338,8a3.868,3.868,0,0,0-3.813,3.905,3.942,3.942,0,0,0,.609,2.1L30.9,25.245a3.693,3.693,0,0,0-1.542-.342,3.757,3.757,0,0,0-2.7,1.163L18.7,21.312a3.979,3.979,0,0,0,0-.7,3.914,3.914,0,0,0-1.32-2.714,3.767,3.767,0,0,0-2.77-.923A3.877,3.877,0,0,0,11.147,21.1a3.923,3.923,0,0,0,.748,2.077L6.753,28.448a3.693,3.693,0,0,0-1.948-.563,3.905,3.905,0,1,0,0,7.81A3.868,3.868,0,0,0,8.618,31.79a3.933,3.933,0,0,0-.563-2.022l5.234-5.4a3.693,3.693,0,0,0,1.634.4h.249a3.776,3.776,0,0,0,2.871-1.689l7.7,4.616a3.933,3.933,0,0,0-.185,1.145,3.813,3.813,0,0,0,7.625,0,3.924,3.924,0,0,0-.831-2.409l9.112-11.078a3.693,3.693,0,0,0,1.846.526A3.937,3.937,0,0,0,43.338,8ZM4.805,33.849A2.059,2.059,0,1,1,6.864,31.79,2.059,2.059,0,0,1,4.805,33.849Zm10.238-10.94a1.911,1.911,0,0,1-1.385-.48,2.077,2.077,0,0,1-.665-1.44A2.031,2.031,0,0,1,14.84,18.8h.129a1.9,1.9,0,0,1,1.265.48,2.077,2.077,0,0,1,.7,1.44,2.031,2.031,0,0,1-1.893,2.188Zm14.328,7.958a2.059,2.059,0,1,1,1.966-2.059,2.022,2.022,0,0,1-1.966,2.059Zm13.968-16.9A2.059,2.059,0,1,1,45.3,11.905a2.013,2.013,0,0,1-1.966,2.059Z" transform="translate(-0.9 -8)"/></svg>
+					<span class="title">RELATÓRIOS</span>
+				</a>
+			</li>			
+			<li class="item-menu">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="53.119" height="46.871" class="icon "  viewBox="0 0 53.119 46.871"><defs></defs><path class="a" d="M288.763,347.773H264.071a.778.778,0,0,0,0,1.556h24.692a.778.778,0,1,0,0-1.556Zm0,0" transform="translate(-242.641 -331.066)"/><path class="a" d="M288.763,390.773H264.071a.778.778,0,0,0,0,1.556h24.692a.778.778,0,1,0,0-1.556Zm0,0" transform="translate(-242.641 -368.118)"/><path class="a" d="M288.763,433.773H264.071a.778.778,0,1,0,0,1.556h24.692a.778.778,0,1,0,0-1.556Zm0,0" transform="translate(-242.641 -405.17)"/><path class="a" d="M252.493,298.578H222.858a4.531,4.531,0,0,0-4.526,4.526v18.635a4.531,4.531,0,0,0,4.526,4.526h20.771a.719.719,0,0,1,.566.274l6.708,8.492a1.335,1.335,0,0,0,1.054.517,1.383,1.383,0,0,0,.453-.077,1.338,1.338,0,0,0,.91-1.279v-8a4.547,4.547,0,0,0,3.7-4.449V303.1a4.531,4.531,0,0,0-4.525-4.526Zm2.969,23.161a2.98,2.98,0,0,1-2.931,2.968.779.779,0,0,0-.768.778v8.124l-6.346-8.035a2.265,2.265,0,0,0-1.787-.866H222.858a2.973,2.973,0,0,1-2.97-2.97V303.1a2.973,2.973,0,0,1,2.97-2.97h29.635a2.973,2.973,0,0,1,2.969,2.97Zm0,0" transform="translate(-203.9 -288.677)"/><path class="a" d="M125.464,249.768a2.074,2.074,0,0,0-1.342.771l-5.345,6.767v-6.782a.778.778,0,0,0-.768-.778,2.493,2.493,0,0,1-2.452-2.483V231.041a2.487,2.487,0,0,1,2.484-2.485h25.8a2.487,2.487,0,0,1,2.484,2.485v3a.778.778,0,1,0,1.556,0v-3a4.045,4.045,0,0,0-4.04-4.041h-25.8a4.045,4.045,0,0,0-4.04,4.041v16.222a4.059,4.059,0,0,0,3.22,3.955V258.1a1.265,1.265,0,0,0,.86,1.209,1.306,1.306,0,0,0,.428.073,1.264,1.264,0,0,0,1-.488l5.839-7.393a.527.527,0,0,1,.34-.2.778.778,0,0,0-.219-1.541Zm0,0" transform="translate(-114 -227)"/></svg>
+					<span class="title">ATENDIMENTO</span>
+				</a>
+			</li>			
+		</ul>
+	</nav>
+<div class="main-container">
+	<div class="trasac-header">
+		<div class="valores">
+			<div class="valor liq">
+				<h2 class="title-valor-liq-lib">Valor Liberado Liq.</h2>
+				<p>R$649,38</p>
+			</div>
+			<div class="valor total">
+				<h2 class="title-total-liq">Total a Reber Liq.</h2>
+				<p>R$649,38</p>
+			</div>
+			<div class="valor">
+				<h2 class="process-transfpg"> Processando Transf./ Pagto </h2>
+				<p>R$0,0</p>
+			</div>
+		</div>
+		<div class="user-info">
+			<img src="../../public/assets/Grupo_de_mscara_3@2x.png" alt="user-icon" class="user-icon">
+			<p class="user-name">Galeria das Delícias</p>
+			<a href=""><img src="../../public/assets/Icon material-notifications-none.svg" alt="notificações"></a>
+			<a href=""> <img src="../../public/assets/icone-reticencias.svg" alt="maisOpcoes"> </a>
+		</div>
+	</div>
+
+	<div class="transacoes-table-box ">
+		<div class="cabecalho-transacoes">		
+				<div class="box-header-t-left">
+
+					<h1>Transações</h1>
+					<input type="week" name="" id="data-periodo" >
+					<div id="data-piker">
+
+					</div>
+				</div>
+
+			<div class="box-header-t-right">
+				
+				<a href="#">PDF</a>
+				<a href="#">CSV</a>
+					
+				<a href="#" class="buscar">
+					<span class="filtrar-icon"></span>
+					<span>Buscar</span>
+					<span class="arrow-down-icon"></span>
+				</a>
+			</div>	
+
+		</div>	
+
+		<div class="valores-totais">
+			<div class="valor-total-vendas">
+				<h2>Total de vendas</h2>
+				<h3>NO PERÍODO</h3>
+				<p class="valor ">R$40.433,35</p>
+			</div>
+			<div class="valor-total-liq">
+				<h2>Total Liq.</h2>
+				<h3>NO PERÍODO</h3>
+				<p class="valor ">R$39.060,77</p>
+			</div>
+			<div class="valor-total-prepresentante">
+				<h2>Total</h2>
+				<h3>INTERMEDIAÇÃO REPRESENTANTE</h3>
+				<p class="valor ">R$309,02</p>
+			</div>
+		</div>
+
+		<div class="table-content table-responsive">
+			<table class="table table-hover  table-responsive">
+				<thead class="table-borderless">
+				  <tr>
+					<th scope="col">#</th>
+					<th scope="col">MAQUINETA</th>
+					<th scope="col">DATA</th>
+					<th scope="col">TIPO</th>
+					<th scope="col">VALOR BRUTO</th>
+					<th scope="col">TAXA</th>
+					<th scope="col">TAXA COMISSÃO</th>
+					<th scope="col">VALOR COMISSÃO</th>
+					<th scope="col">VALOR LIQ.</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">1</th>
+					<td> <span class="maquineta-icon" ></span> 5431769</td>					
+					<td>02/06/2020 - 14:28</td>
+					<td>
+						<div class="tipo-row">
+							<img src="../../public/assets/master_card.svg" class="icon-card" alt="cartão"> Crédito (1x)
+						</div>
+					</td>
+					<td>R$ 14,49</td>
+					<td>3.49% | R$ 0,51</td>
+					<td>0,90%</td>
+					<td>R$ 0,14</td>
+					<td>R$ 13,98</td>
+				  </tr>
+				  <tr>
+					<th scope="row">2</th>
+					<td><span class="maquineta-icon" ></span> 5431769</td>					
+					<td>02/06/2020 - 14:28</td>
+					<td class="tipo-row"><img src="../../public/assets/visa_Card.svg" class="icon-card" alt="cartão"> Crédito (1x)</td>
+					<td>R$ 14,49</td>
+					<td>3.49% | R$ 0,51</td>
+					<td>0,90%</td>
+					<td>R$ 0,14</td>
+					<td>R$ 13,98</td>
+				  </tr>
+								 
+				</tbody>
+			  </table>
+
+		</div>		
+	</div>
+
+	<div class="pg-numeracao">
+		<nav aria-label="Navegação de página">
+			<ul class="pagination justify-content-center">
+			  <li class="page-item">
+				<a class="page-link" href="#" aria-label="Anterior">
+				  <span aria-hidden="true">&laquo;</span>
+				  <span class="sr-only">Anterior</span>
+				</a>
+			  </li>
+			  <li class="page-item active"><a class="page-link " href="#">1</a></li>
+			  <li class="page-item ">
+				<a class="page-link" href="#">2</a>
+			  </li>
+			  <li class="page-item"><a class="page-link" href="#">3</a></li>
+			  <li class="page-item">
+				<a class="page-link" href="#" aria-label="Próximo">
+				  <span aria-hidden="true">&raquo;</span>
+				  <span class="sr-only">Próximo</span>
+				</a>
+			  </li>
+			</ul>
+		  </nav>
+	</div>
+	</div>
+</div>
+
+<div id="modal" class="hide">
+	<!-- class="hide" -->
+    <div class="content">
+        <div class="header">
+            <h1>Filtro</h1>
+            <a href="#">Fechar</a>
+		</div>
+		
+        <form action="">
+			<div class="maq-tipo">
+				<div class="field">
+					<label for="maquineta">Maquineta </label>
+					<select name="maquineta" id="">
+						<option value="#">Selecione a maquineta</option>
+						<option value="#">todas</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="tipo">Tipo </label>
+					<select name="tipo" id="">
+						<option value="#">Selecione o tipo</option>
+						<option value="#">Todos</option>
+					</select>
+
+				</div>
+				
+
+			</div>
+
+			<div class="chip-tempo">
+				<div class="field">
+					<label for="tipo">Chip/Tarja </label>
+					<select name="" id="">
+						<option value="#">Selecione a maquineta</option>
+						<option value="#">Todos</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="inicio-data">Inicio </label>
+					<input type="datetime-local" name="inicio-data" id="">
+				</div>
+				<div class="field">
+					<label for="termino-data">Término </label>
+					<input type="datetime-local" name="termino-data" id="">
+				</div>
+			</div>
+
+			<div class="transac-estorn">
+				<div class="field">
+					<label for="tipo">Transações Estornadas </label>
+					<select name="" id="">
+						<option value="#">Não</option>
+						<option value="#">Selecione a maquineta</option>
+					</select>
+				</div>
+				<div class="field">
+					<button>
+							Buscar
+					</button>
+				</div>
+			
+			</div>
+
+        </form>
+    </div>
+</div>
+
+<!-- declaração JS Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="../../public/scripts/main.js"></script>
+
+ <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- JSX -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+  <!-- Load our React component. -->
+  <script>
+	import React  from 'react';
+	import ReactDOM  from 'react-dom';
+	import { calendar } from 'react-date-range';
+
+	import '../../node_modules/react-date-range/dist/styles.css'; // main style file
+	import '../../node_modules/react-date-range/dist/theme/default.css'; // theme css file
+
+
+
+	function DatePick(){
+	const handleSelect = data => {
+		console.log(date)
+	};
+	return (
+		<div>
+		<Calendar date={new Date()} onchange = {handleSelect} />;
+		</div>
+	);
+	}
+
+	ReactDOM.render(<DatePick />, document.getElementById("data-piker") );
+  </script>
+  <!-- <script src="../../public/scripts/datapiker.js"></script> -->
+</body>
+</html>

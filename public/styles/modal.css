@@ -1,0 +1,131 @@
+#modal {
+    /* background-color: #0e0a14d3; */
+    background: #ffffffd3;
+    
+    padding: 50px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    position: fixed;
+
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 500ms;
+}
+
+#modal.hide{
+    display: none;
+}
+
+#modal .content {
+    color: var(--title-color);
+    background-color: #FFFFFF ;
+    box-shadow: 0px 3px 99px #6685DA57;
+    border-radius: 20px;
+    padding: 50px;
+    width: 600px;
+}
+
+#modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #6c6c80;
+    margin-bottom: 48px;
+}
+
+#modal .header a{
+    background-image: url("../assets/Icone_btn_fechar.svg");
+    background-color: var(--link-color);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 100%;
+    display: flex;
+    font-size: 0.01px;
+}
+
+#modal .header h1 {
+
+    font-size: 36px;
+    line-height: 42px;
+}
+
+/* Inicio formulário */
+#modal form  select, input {
+    border: #97A3B5 solid 1px;
+    border-radius: 27px;
+    color: var(--title-color);
+    font-size: 12px;
+}
+
+#modal form label{
+    font-size: 14px;
+    line-height: 16px;
+
+    display: block;
+    margin-bottom: 8px;
+}
+
+#modal form .maq-tipo {
+    display: flex;
+    flex-direction: row; 
+    vertical-align: middle;
+    justify-content: space-between;
+}
+
+#modal form .chip-tempo {
+    display: flex;
+    flex-direction: row; 
+    vertical-align: middle;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+#modal form .chip-tempo .field select, input{
+    width: 9.5rem; 
+}
+
+#modal form .transac-estorn {
+    display: flex;
+    flex-direction: row; 
+    vertical-align: middle;    
+    margin-top: 10px;
+    justify-content: space-between;
+} 
+
+#modal form button {
+    width: 72px;
+    height: 32px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: var(--link-color);
+
+    border: 0;
+    border-radius: 27px;
+}
+
+#modal form button:hover {
+    /* background-color: var(--link-color) ; */
+    opacity: 0.5;
+}
+
+/* Isso é para o modal created */
+#modal.point .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal.point h1{
+    color: #fff;
+    margin-top: 32px;
+}
